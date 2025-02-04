@@ -6,15 +6,15 @@ import pandas as pd
 import pickle
 
 ##Load model
-model= tf.keras.models.load_model(r"C:\Users\KIIT0001\Documents\Collage_Notes\Codes\Udemy_Codes_LLM\ANN_Project\model.h5")
+model= tf.keras.models.load_model("model.h5")
 
-with open(r"C:\Users\KIIT0001\Documents\Collage_Notes\Codes\Udemy_Codes_LLM\ANN_Project\label_encoder_gender.pkl",'rb') as file:
+with open("label_encoder_gender.pkl",'rb') as file:
     label_encoder_gender= pickle.load(file)
     
-with open(r"C:\Users\KIIT0001\Documents\Collage_Notes\Codes\Udemy_Codes_LLM\ANN_Project\onehot_encoder_geo.pkl",'rb') as file:
+with open("onehot_encoder_geo.pkl",'rb') as file:
     onehot_encoder_geo = pickle.load(file)
     
-with open(r"C:\Users\KIIT0001\Documents\Collage_Notes\Codes\Udemy_Codes_LLM\ANN_Project\scaler.pkl",'rb') as file:
+with open("scaler.pkl",'rb') as file:
     scaler=pickle.load(file)
     
 ##streamlit app
